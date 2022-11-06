@@ -1,0 +1,218 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+body {
+   align-items: center;
+   height: auto;
+   justify-content: center;
+   background-color: #F9FBFE;
+
+  }
+ 
+h1 {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  margin: 0px;
+  background-color: #0051FF;
+  color: white;
+  font-weight: 100;
+  padding-top: 10px;
+}  
+
+.container {
+  display: flex;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+
+h2 {
+  margin-bottom: 0px;
+}
+
+.cn {
+  margin-top: 1px;
+} 
+
+.container .coin-price {
+  box-shadow:  0 0 3px #ccc;
+  display: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px; 
+  border-radius: 5px;
+  margin-right: 10px ;
+}
+
+.container .coin-price .logo {
+  width: 60px;
+ }
+ 
+.container .coin-price .logo img {
+ width: 100%;
+}
+
+.container .coin-price .logo div{
+  display: block;
+ }
+
+.btc, .eth, .sol, .shiba, .bnb, .matic, .xrp, .link, .vet {
+  color: red;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #ccc;
+  padding: 8px;
+
+}
+
+th {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+#tableData {
+  background-color: #EFF2F5;
+  text-align: center;
+}
+
+.container2 {
+  height: auto;
+}
+
+.secondh1 {
+  font-size: 35px;
+}
+
+#userimg {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 2.2%;
+  height: 30px;
+  margin: -3px;
+}
+
+.container3 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: orange;
+  height: 55px;
+}
+
+.secondh1 {
+  background-color: green;
+  height: 55px;
+
+}
+
+select {
+  margin-right: 30px;
+  font-size: 24px;
+}
+
+label {
+  margin-right: 5px;
+  font-size: 24px;
+}
+
+input {
+  width: 5%;
+  height: 34px;
+  margin-right:5px ;
+}
+
+button {
+  margin-left: 10px;
+  /* background-color: darkgray; */
+  font-weight: 800;
+  font-size: 17px;
+  height: 36px;
+  width: 9%;
+}
+
+.port {
+  height: auto;
+  width: auto;
+  align-items: center;
+  margin: auto;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+
+.thefives {
+  border: 1px solid #ccc;
+  border-radius: 10%;
+  font-size: 18px;
+  width: 50%;
+  text-align: center;
+  font-size: 24px;
+}
+
+.span1 {
+  font-size: 20px;
+  color: orange;
+}
+
+.span2 {
+  font-size: 20px;
+  color: orange;
+}
+
+.delete {
+  border: 1px solid gray;
+  border-radius: 5%;
+  text-transform: uppercase;
+  text-align: center;
+  width: auto;
+  font-size: 12px;
+
+}
+
+span {
+  text-transform: uppercase;
+}
+
+
+
+
+/* Tablet size */
+@media (min-width:601px) and (max-width: 800px) {
+
+}
+
+
+
+
+ /* Mobile size  */
+@media only screen and (max-width: 600px) {
+
+}
+

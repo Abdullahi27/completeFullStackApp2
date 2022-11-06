@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  	<meta name="description" content="Your description goes here">
+  	<meta name="keywords" content="one, two, three">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title> Cryptocurrency Tracker </title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+	<h1 class="title">Cryptocurrency Tracker</h1>
+	<div class="container">
+		<div class="coin-price"> 
+			<div class="logo"> <img src="images/bitcoin.png" alt=""> </div>
+				<div>
+					<h2 class="btc">$000</h2>
+					<h2 class="cn">Bitcoin</h2>
+				</div>
+		</div>
+		<div class="coin-price"> 
+			<div class="logo"> <img src="images/ethereum.png" alt=""> </div>
+				<div>
+					<h2 class="eth">$000</h2>
+					<h2 class="cn">Ethereum</h2>
+				</div>
+		</div>	
+		<div class="coin-price"> 
+			<div class="logo"> <img src="images/solana.png" alt=""> </div>
+				<div>
+					<h2 class="sol">$000</h2>
+					<h2 class="cn">Solana</h2>
+				</div>
+		</div>	
+		<div class="coin-price"> 
+			<div class="logo"> <img src="images/binance.png" alt=""> </div>
+				<div>
+					<h2 class="bnb">$000</h2>
+					<h2 class="cn">Binance</h2>
+				</div>
+		</div>	
+		<div class="coin-price"> 
+			<div class="logo"> <img src="images/shiba-inu.png" alt=""> </div>
+				<div>
+					<h2 class="shiba">$000</h2>
+					<h2 class="cn">Shiba Inu</h2>
+				</div>
+		</div>		
+		<div class="coin-price"> 
+			<div class="logo"> <img src="images/xrp.png" alt=""> </div>
+				<div>
+					<h2 class="xrp">$000</h2>
+					<h2 class="cn">Ripple</h2>
+				</div>
+		</div>		
+		<div class="coin-price"> 
+			<div class="logo"> <img src="images/chainlink.png" alt=""> </div>
+				<div>
+					<h2 class="link">$000</h2>
+					<h2 class="cn">Chainlink</h2>
+				</div>
+		</div>	
+		<div class="coin-price"> 
+			<div class="logo"> <img src="images/polygon.png" alt=""> </div>
+				<div>
+					<h2 class="matic">$000</h2>
+					<h2 class="cn">Polygon</h2>
+				</div>
+		</div>	
+		<div class="coin-price"> 
+			<div class="logo"> <img src="images/vechain.png" alt=""> </div>
+				<div>
+					<h2 class="vet">$000</h2>
+					<h2 class="cn">Vechain</h2>
+				</div>
+		</div>	
+	</div>
+	<div>
+		 <table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Price</th>
+					<th>Market Cap</th>
+					<th>24hr Volume</th>
+					<th>Circulating supply</th>		
+				</tr>
+			</thead>
+
+			<tbody id="tableData">
+
+			</tbody>
+         </table>
+        </div>
+
+        <div class="container3" >
+            <label for="">Select Coin </label>
+            <select name="" id="selectNumber"></select>
+            <label for="">Enter Amount</label> 
+            <input type="text" name="" id="amount">
+            <button id="save">Save to Portfolio</button>
+        </div>
+
+         <div class="container2">
+            <h1 class="secondh1"> <img id="userimg" src="images/user.png" alt=""> Portfolio</h1>
+                <div class="port">
+            <% for(var i=0; i<abdullahi.length; i++) {%>
+                <% if (user.local.email === abdullahi[i].email) { %>
+                    <div class="thefives">
+                 <h5 class="card-title"> <span class="span1">Coin: </span> <%= abdullahi[i].name %></h5>
+                 <h5><span class="span2">Amount: </span> <%= abdullahi[i].amount %></ </h5>  
+                 <h5><button class="delete" data-amount="<%= abdullahi[i].amount %>" data-name="<%= abdullahi[i].name %>">Delete</button></h5>  
+                    </div>       
+              <% } %>
+              <% } %>
+                </div>
+	    </div>
+
+
+</main>
+
+
+
+
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
