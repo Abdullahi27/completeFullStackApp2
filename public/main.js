@@ -113,6 +113,30 @@ Array.from(trash).forEach(function(element) {
 });
 
 
+
+let updateBtn = document.getElementsByClassName("update"); 
+
+Array.from(updateBtn).forEach(function(element) {
+  console.log('update')
+  element.addEventListener('click', function(){
+    const newAmount = document.getElementById(element.dataset.id).value
+    console.log(newAmount)
+    const id = element.dataset.id
+    fetch('update', {
+      method: 'put',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        id: id,
+        newAmount:newAmount
+      })
+    }).then(function (response) {
+      window.location.reload()
+    })
+  });
+});
+
 //  window.onload = () => {
 //     loadTableData(cryptoData)
 //  }

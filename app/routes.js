@@ -52,6 +52,25 @@ module.exports = function(app, passport, db) {
         })
       })
 
+      const ObjectId = require('mongodb').ObjectID;
+
+      app.put('/update', (req, res) => {
+        console.log('put')
+        console.log(req.body.idField)
+        db.collection('cryptoPortfolio')
+        .findOneAndUpdate({_id: ObjectId(req.body.id) }, {
+          $set: {
+            amount:req.body.newAmount
+          }
+        }, {
+          sort: {_id: -1},
+          upsert: true
+        }, (err, result) => {
+          if (err) return res.send(err)
+          res.send(result)
+        })
+      })
+      
    
 
     // app.delete('/messages', (req, res) => {

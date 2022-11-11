@@ -154,7 +154,7 @@ button {
   font-weight: 800;
   font-size: 17px;
   height: 36px;
-  width: 10%;
+  width: auto;
 }
 
 .port {
@@ -194,6 +194,21 @@ button {
   width: auto;
   font-size: 12px;
 
+}
+
+.update {
+  border: 1px solid gray;
+  border-radius: 5%;
+  text-transform: uppercase;
+  text-align: center;
+  width: auto;
+  font-size: 12px;
+  margin-top: 5px;
+
+}
+
+label {
+  font-size: 18px;
 }
 
 span {

@@ -113,6 +113,12 @@
                     <div class="thefives">
                  <h5 class="card-title"> <span class="span1">Coin: </span> <%= abdullahi[i].name %></h5>
                  <h5><span class="span2">Amount: </span> <%= abdullahi[i].amount %></ </h5>  
+				 <br>
+				 <label for="">New Amount:</label>
+				 <input type="text" name="newAmount" id="<%= abdullahi[i]._id %>">
+				 <br>
+				 <button class="update" data-id="<%= abdullahi[i]._id %>">Update Amount</button>
+				 <br>
                  <h5><button class="delete" data-amount="<%= abdullahi[i].amount %>" data-name="<%= abdullahi[i].name %>">Delete</button></h5>  
                     </div>       
               <% } %>
